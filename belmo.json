@@ -1,0 +1,18 @@
+{
+  "$schema": "https://belmo.io/schema.json",
+  "name": "top-aichat-clone",
+  "service": {
+    "type": "api",
+    "framework": "node",
+    "buildCommand": "npm run build",
+    "startCommand": "node server/index.js",
+    "nodeVersion": "20"
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": {
+      "from": "PORT",
+      "default": "3000"
+    }
+  }
+}
