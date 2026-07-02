@@ -4,8 +4,9 @@
   "service": {
     "type": "api",
     "framework": "node",
-    "buildCommand": "",
-    "startCommand": "node server/index.js",
+    "rootDirectory": "server",
+    "buildCommand": "npm install",
+    "startCommand": "node index.js",
     "nodeVersion": "20"
   },
   "env": {
