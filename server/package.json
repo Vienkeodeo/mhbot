@@ -1,0 +1,9 @@
+{
+  "name": "mhbot-server",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "zca-js": "^2.1.2"
+  }
+}
