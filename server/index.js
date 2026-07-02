@@ -52,6 +52,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/health", (req, res) => {
+  res.json({ ok: true });
+});
+
 app.get("/api/health", (req, res) => {
   res.json({
     ...getHealth(),
