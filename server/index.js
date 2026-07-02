@@ -235,8 +235,8 @@ if (existsSync(distDir)) {
   });
 }
 
-const server = app.listen(port, "127.0.0.1", () => {
-  console.log(`Top AiChat API listening on http://127.0.0.1:${port}`);
+const server = app.listen(port, "0.0.0.0", () => {
+  console.log(`Top AiChat API listening on http://0.0.0.0:${port}`);
 });
 
 server.on("error", (error) => {
